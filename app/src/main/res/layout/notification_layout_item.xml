@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView_notifycations"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="10dp"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="5dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:weightSum="4">
+
+        <ImageView
+            android:id="@+id/img_notification_screen"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_baseline_circle_notifications_24" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:orientation="vertical"
+            android:weightSum="5">
+
+            <TextView
+                android:id="@+id/txt_title_notification_screen"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="Đặt món thành công"
+                android:textColor="@color/green"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_timing_notification_screen"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="1 phút trước"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/txt_content_notification_screen"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:maxLines="2"
+                android:text="Đơn hàng bản đã được tiếp nhận và sẽ được giao trong khoảng thời gian sớm nhất. Xin chân thành cảm ơn."
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_item_notifycation"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:background="@color/green"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/imgBtn_item_notifycation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                android:padding="30dp"
+                android:src="@drawable/thung_rac_trang" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

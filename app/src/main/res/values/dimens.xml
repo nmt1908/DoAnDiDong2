@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="btn_elevation">5dp</dimen>
+    <dimen name="textNormal">16sp</dimen>
+    <dimen name="confirm_dialog_btn_bg">15dp</dimen>
+    <dimen name="textMedium">18sp</dimen>
+    <dimen name="confirm_dialog_btn_horizontal_pd">30dp</dimen>
+    <dimen name="fragment_list_padding_top">5dp</dimen>
+    <dimen name="btnSize50">50dp</dimen>
+    <dimen name="zero">0dp</dimen>
+    <dimen name="rounded_radius">999dp</dimen>
+    <dimen name="round20">20dp</dimen>
+    <dimen name="btn_order_margin_top">10dp</dimen>
+    <dimen name="button_order_recyler_margin">5dp</dimen>
+    <dimen name="textSmall">10sp</dimen>
+    <dimen name="title_recycler_margin_bottom">5dp</dimen>
+    <dimen name="editOptionsEditMarginTop">50dp</dimen>
+
+    //-----------------------------Chu dinh hanh--------------------------------//
+    <dimen name="cardCornerRadius_cart_screen">5dp</dimen>
+    <dimen name="cardElevation_cart_screen">5dp</dimen>
+    <dimen name="LinearLayout_item_cart_screen">10dp</dimen>
+    <dimen name="Button_item_width_cart_screen">65dp</dimen>
+    <dimen name="Button_item_height_cart_screen">40dp</dimen>
+    <dimen name="Button_item_elevation_cart_screen">10dp</dimen>
+    <dimen name="cardview_coneradius_detail_item_screen">5dp</dimen>
+    <dimen name="cardview_elevation_detail_item_screen">5dp</dimen>
+    <dimen name="roundedImageview_detail_item_cart_screen">100dp</dimen>
+    <dimen name="roundedImageview_height_detail_item_cart_screen">120dp</dimen>
+    <dimen name="roundedImageview_radious_detail_item_cart_screen">5dp</dimen>
+    <dimen name="fragment_home_txt_size_category">16sp</dimen>
+    <dimen name="fragment_home_recyclerview_height_category">150dp</dimen>
+    <dimen name="fragment_home_rviewflipper_height">200dp</dimen>
+    <dimen name="fragment_home_txt_height_menu">30dp</dimen>
+    <dimen name="fragment_home_txt_padding_left_menu">10dp</dimen>
+    <dimen name="fragment_home_txt_size_menu">16sp</dimen>
+    <dimen name="fragment_product_imgv_height">250dp</dimen>
+    <dimen name="fragment_product_linearlayout_padding_wrapper_top">10dp</dimen>
+    <dimen name="fragment_product_imgbtn_heart_height">50dp</dimen>
+    <dimen name="fragment_product_imgbtn_heart_layout_margin_right">10dp</dimen>
+    <dimen name="fragment_product_linearlayout_content_height">370dp</dimen>
+    <dimen name="fragment_product_linearlayout_content_margin_start">1dp</dimen>
+    <dimen name="fragment_product_linearlayout_content_layout_margin_botton">4dp</dimen>
+    <dimen name="fragment_product_linearlayout_content_layout_elevation">10dp</dimen>
+    <dimen name="fragment_product_linearlayout_content_layout_padding">20dp</dimen>
+    <dimen name="fragment_product_txt_content_name_txtsize">20sp</dimen>
+    <dimen name="fragment_product_number_rating_txt_size">20sp</dimen>
+    <dimen name="fragment_product_txt_rating_total_number">20sp</dimen>
+    <dimen name="home_layout_item_radious">5dp</dimen>
+    <dimen name="home_layout_item_width">110dp</dimen>
+    <dimen name="home_layout_item_menu_elevation">10dp</dimen>
+    <dimen name="home_layout_item_rounded_imgv_width">180dp</dimen>
+    <dimen name="home_layout_item_rounded_imgv_height">165dp</dimen>
+    <dimen name="home_layout_item_linear_layout_elevation">10dp</dimen>
+    <dimen name="home_layout_item_btn_add_cart_height">32dp</dimen>
+    <dimen name="home_layout_item_btn_add_cart_elevation">20dp</dimen>
+    <dimen name="home_layout_item_btn_add_cart_txt_size">11sp</dimen>
+    <dimen name="text_field_padding">4dp</dimen>
+    //-----------------------------Chu dinh hanh--------------------------------//
+</resources>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_product_management"
+            android:icon="@drawable/ic_product"
+            android:title="@string/menu_product_management" />
+        <item
+            android:id="@+id/nav_category_management"
+            android:icon="@drawable/ic_category"
+            android:title="@string/menu_category_management" />
+        <item
+            android:id="@+id/nav_order_management"
+            android:icon="@drawable/ic_order_list"
+            android:title="@string/menu_order_management" />
+        <item
+            android:id="@+id/nav_user_management"
+            android:icon="@drawable/ic_user_list"
+            android:title="@string/menu_user_management" />
+
+        <item
+            android:id="@+id/nav_role_management"
+            android:icon="@drawable/baseline_work_24"
+            android:title="@string/menu_role_management" />
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_logout"
+            android:title="@string/nav_logout" />
+    </group>
+</menu>

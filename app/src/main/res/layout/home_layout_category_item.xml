@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardview_category_home_screen"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="10dp"
+    app:cardElevation="0dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="@dimen/home_layout_item_radious"
+            app:cardElevation="@dimen/home_layout_item_radious">
+
+            <ImageView
+                android:id="@+id/img_search_item_type"
+                android:layout_width="@dimen/home_layout_item_width"
+                android:layout_height="@dimen/home_layout_item_width"
+                android:scaleType="centerCrop"
+                android:src="@drawable/food4png" />
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/txt_name_search_item_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Com Ga Xoi Mo"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:weightSum="4"
+    app:cardCornerRadius="@dimen/cardview_coneradius_detail_item_screen"
+    app:cardElevation="@dimen/cardview_elevation_detail_item_screen"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/img_suggestive_detail_screen"
+            android:layout_width="@dimen/roundedImageview_detail_item_cart_screen"
+            android:layout_height="@dimen/roundedImageview_height_detail_item_cart_screen"
+            android:scaleType="centerCrop"
+            android:src="@drawable/food4png"
+            app:riv_corner_radius="@dimen/roundedImageview_radious_detail_item_cart_screen" />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

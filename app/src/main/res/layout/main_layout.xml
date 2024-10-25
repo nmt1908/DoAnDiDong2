@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    android:id="@+id/drawerLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.user.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/toolbar_background"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:paddingRight="5dp"
+            app:elevation="2dp">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:contentInsetStart="0dp"
+                app:contentInsetEnd="0dp"
+                app:contentInsetStartWithNavigation="0dp">
+                <SearchView
+                    android:id="@+id/searchView"
+                    android:theme="@style/Theme.FoodRocket.SearchView"
+                    android:iconifiedByDefault="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:inputType="text"
+                    android:background="@drawable/search_bar_background"
+                    android:drawableStart="@drawable/ic_search_rounded"
+                    android:queryHint="Tìm món ăn"
+                    android:queryBackground="@null" />
+
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="12">
+        </FrameLayout>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigation"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            app:compatShadowEnabled="true"
+            app:itemIconSize="30sp"
+            app:labelVisibilityMode="auto"
+            app:itemIconTint="@drawable/bottomnavigation_menu_item_foreground"
+            app:itemTextColor="@drawable/bottomnavigation_menu_item_foreground"
+            app:menu="@menu/bottom_navigation_menu" />
+    </LinearLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:menu="@menu/navigation_menu_admin"
+        app:itemIconTint="@drawable/navigation_bar_menu_item_color"
+        app:itemTextColor="@drawable/navigation_bar_menu_item_color"
+        app:itemBackground="@drawable/navigation_bar_menu_item_background"
+        app:headerLayout="@layout/navigation_header">
+    </com.google.android.material.navigation.NavigationView>
+
+</androidx.drawerlayout.widget.DrawerLayout>

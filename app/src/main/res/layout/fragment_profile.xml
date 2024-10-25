@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/bg_user">
+        </com.google.android.material.imageview.ShapeableImageView>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/userImage"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="82dp"
+            android:layout_gravity="center"
+            android:src="@drawable/avt_user"
+            app:shapeAppearanceOverlay="@style/Circle">
+        </com.google.android.material.imageview.ShapeableImageView>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imgUploadImage"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:layout_marginTop="195dp"
+            android:layout_marginLeft="230dp"
+            app:shapeAppearanceOverlay="@style/Circle"/>
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="200dp"
+            android:layout_marginLeft="235dp"
+            android:src="@drawable/ic_menu_camera"
+            app:shapeAppearanceOverlay="@style/Circle"/>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="5"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2.5">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="8"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    android:gravity=""
+                    android:text="Họ tên:"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/textTitlePrimary"></TextView>
+                <TextView
+                    android:id="@+id/tvUserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="7"
+                    android:gravity=""
+                    android:text="Nguyen Van A"
+                    android:textSize="18dp"></TextView>
+            </LinearLayout>
+            <ImageButton
+                android:id="@+id/btnUpdateUserName"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@null"
+                android:src="@drawable/expansion_mark_icon"></ImageButton>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2.5">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="8"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    android:gravity=""
+                    android:text="Email:"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/textTitlePrimary"></TextView>
+                <TextView
+                    android:id="@+id/tvUserEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="7"
+                    android:gravity=""
+                    android:text="NguyenA@gmail.com"
+                    android:textSize="18dp"></TextView>
+            </LinearLayout>
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@null"
+                android:src="@drawable/expansion_mark_icon"></ImageButton>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2.5">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="8"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    android:gravity=""
+                    android:text="Mật Khẩu:"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/textTitlePrimary"></TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="7"
+                    android:gravity=""
+                    android:text="***************"
+                    android:textSize="18dp"></TextView>
+            </LinearLayout>
+            <ImageButton
+                android:id="@+id/btnUpdatePassword"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@null"
+                android:src="@drawable/expansion_mark_icon"></ImageButton>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/layoutBtnAction"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:elevation="10dp"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/btnSave"
+            android:textSize="@dimen/textNormal"
+            android:layout_marginRight="20dp"
+            android:text="Lưu"
+            android:textStyle="bold"
+            android:paddingVertical="5dp"
+            android:paddingHorizontal="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:background="@drawable/btn_order_accept_bg"
+            app:backgroundTint="#3DABEC" />
+
+        <Button
+            android:id="@+id/btnLogout"
+            android:text="Đăng xuất"
+            android:paddingVertical="5dp"
+            android:textSize="@dimen/textNormal"
+            android:textStyle="bold"
+            android:paddingHorizontal="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:background="@drawable/btn_order_delete_bg"
+            app:backgroundTint="#e23342" />
+    </LinearLayout>
+
+</LinearLayout>

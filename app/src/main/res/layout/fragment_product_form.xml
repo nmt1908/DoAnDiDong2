@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:scrollbars="none"
+    android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:animateLayoutChanges="true"
+            android:orientation="vertical">
+
+            <androidx.coordinatorlayout.widget.CoordinatorLayout
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="30dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.495"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:statusBarBackground="#eee">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/imgProduct"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/image_upload_default"
+                    app:shapeAppearance="@style/roundedImageViewRounded"
+                    app:strokeWidth="1dp" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/btnUploadImage"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:backgroundTint="@color/white"
+                    android:src="@drawable/ic_menu_camera"
+                    android:translationX="100dp"
+                    android:translationY="100dp"
+                    app:fabCustomSize="50dp" />
+
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/textViewInputLabel"
+                    android:text="Tên sản phẩm"/>
+
+                <EditText
+                    android:id="@+id/edName"
+                    style="@style/edTextField"
+                    android:hint="Tên sản phẩm" />
+
+                <TextView
+                    style="@style/textViewInputLabel"
+                    android:text="Chọn danh mục"/>
+
+                <TextView
+                    android:id="@+id/edCategories"
+                    style="@style/edTextField"
+                    android:drawableRight="@drawable/ic_arrow_down"
+                    android:inputType="none"
+                    android:hint="-- Chọn danh mục --"
+                    android:paddingRight="10dp" />
+
+                <TextView
+                    style="@style/textViewInputLabel"
+                    android:text="Giá bán"/>
+
+                <EditText
+                    android:id="@+id/edPrice"
+                    style="@style/edTextField"
+                    android:hint="Giá bán"
+                    android:inputType="number" />
+
+                <TextView
+                    style="@style/textViewInputLabel"
+                    android:text="Số lượng"/>
+
+                <EditText
+                    android:id="@+id/edQuantity"
+                    style="@style/edTextField"
+                    android:hint="Số lượng"
+                    android:inputType="number" />
+
+                <TextView
+                    style="@style/textViewInputLabel"
+                    android:text="Đơn vị tính"/>
+
+                <EditText
+                    android:id="@+id/edUnit"
+                    style="@style/edTextField"
+                    android:hint="Đơn vị tính" />
+
+                <TextView
+                    style="@style/textViewInputLabel"
+                    android:text="Mô tả"/>
+
+                <EditText
+                    android:id="@+id/edDescription"
+                    style="@style/textArea"
+                    android:hint="Mô tả" />
+
+                <EditText
+                    android:id="@+id/edId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/edImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/btnAddUser"
+                    style="@style/btnAdd"
+                    android:layout_marginBottom="50dp"
+                    android:text="Thêm sản phẩm" />
+
+            </LinearLayout>
+        </LinearLayout>
+</ScrollView>

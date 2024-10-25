@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:scrollbars="none"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:animateLayoutChanges="true"
+        android:orientation="vertical">
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:statusBarBackground="#eee">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/imgUser"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/user_image_default"
+                app:shapeAppearance="@style/roundedImageViewRounded"
+                app:strokeWidth="1dp" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/btnUploadImage"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/white"
+                android:src="@drawable/ic_menu_camera"
+                android:translationX="100dp"
+                android:translationY="100dp"
+                app:fabCustomSize="50dp" />
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/textViewInputLabel"
+                android:text="Tên người dùng"/>
+
+            <EditText
+                android:id="@+id/edFullName"
+                style="@style/edTextField"
+                android:hint="Tên người dùng" />
+
+            <TextView
+                style="@style/textViewInputLabel"
+                android:text="Email"/>
+
+            <EditText
+                android:id="@+id/edEmail"
+                style="@style/edTextField"
+                android:hint="Email"
+                android:inputType="textEmailAddress" />
+
+            <TextView
+                style="@style/textViewInputLabel"
+                android:text="Chọn vai trò"/>
+
+            <TextView
+                android:id="@+id/edRoles"
+                style="@style/edTextField"
+                android:drawableRight="@drawable/ic_arrow_down"
+                android:inputType="none"
+                android:hint="-- Chọn vai trò --"
+                android:paddingRight="10dp" />
+
+
+            <EditText
+                android:id="@+id/edId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/edImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btnAdd"
+                android:visibility="visible"
+                style="@style/btnAdd"
+                android:layout_marginBottom="50dp"
+                android:text="Thêm người dùng" />
+
+            <LinearLayout
+                android:id="@+id/editOptions"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="@dimen/editOptionsEditMarginTop"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnResetPassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/reset_password"
+                    android:textAllCaps="false"
+                    android:background="@drawable/btn_order_accept_bg"
+                    app:backgroundTint="#fbac45"
+                    android:layout_marginRight="@dimen/button_order_recyler_margin"/>
+
+                <Button
+                    android:id="@+id/btnUpdateInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/update_user"
+                    android:textAllCaps="false"
+                    android:background="@drawable/btn_order_accept_bg"
+                    app:backgroundTint="#337ab7" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

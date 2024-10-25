@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".fragments.user.ProfileFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center|left"
+                android:paddingLeft="10dp"
+                android:text="@string/fragment_home_txt_category"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fragment_home_txt_size_category"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView_category_home_screen"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fragment_home_recyclerview_height_category"
+                android:paddingLeft="10dp" />
+
+            <ViewFlipper
+                android:id="@+id/viewFlipper_home_screen"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fragment_home_rviewflipper_height" />
+
+            <TextView
+                android:id="@+id/txt_menu_home_screen"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fragment_home_txt_height_menu"
+                android:gravity="center|left"
+                android:paddingLeft="@dimen/fragment_home_txt_padding_left_menu"
+                android:text="Menu"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fragment_home_txt_size_menu"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView_menu_home_screen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/toolbar_background"
+        android:src="@drawable/mui_ten_di_len"
+        app:layout_anchor="@id/nestedScrollView"
+        app:layout_anchorGravity="bottom|end" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

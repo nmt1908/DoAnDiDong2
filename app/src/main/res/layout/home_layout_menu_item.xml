@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginBottom="20dp"
+    app:cardCornerRadius="@dimen/home_layout_item_radious"
+    app:cardElevation="0dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/home_layout_item_menu_elevation"
+        android:orientation="vertical">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/img_menu_home_screen"
+            android:layout_width="@dimen/home_layout_item_rounded_imgv_width"
+            android:layout_height="@dimen/home_layout_item_rounded_imgv_height"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
+            android:elevation="8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/anh_nhopng"
+            app:riv_corner_radius="8dp"
+            tools:ignore="InvalidId" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="@dimen/home_layout_item_linear_layout_elevation"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_name_menu_home_screen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="Cơm chiên dương châu"
+                android:textColor="@color/red"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_price_menu_home_screen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="40,000 đ"
+                android:textColor="@color/green" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="5">
+
+                <LinearLayout
+                    android:id="@+id/linearlayout_rating_wrapper"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center|left"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txt_qty_start_menu_home_screen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(5.0)"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btn_buy_menu_home_screen"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/home_layout_item_btn_add_cart_height"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/customize_btn_buy_home_screen"
+            android:elevation="16dp"
+            android:maxLines="1"
+            android:shadowColor="@color/black"
+            android:text="Thêm vào giỏ hàng"
+            android:textColor="@color/black"
+            android:textSize="@dimen/home_layout_item_btn_add_cart_txt_size"
+            android:textStyle="bold"
+            app:backgroundTint="@null" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
